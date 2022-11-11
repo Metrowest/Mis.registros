@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Metrowest Service</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Service app" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="192">
+  <meta property="og:image:height" content="192">
+  <meta property="og:description"
+    content="Esta aplicaci&oacute;n le proveer&aacute; el plan de emergencias y algunas herramientas para el servicio.">
+  <meta property="og:title" content="Metrowest Service">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons2/android-chrome-192x192.png?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/desastre.html">
+
+  <!-- Boxicons CDN Link Nav var pequwno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Guide" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_16.ico" sizes="16x16" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_48.ico" sizes="48x48" />
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <link rel="stylesheet" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+
+  <!--SW-->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/Ser/sw.js',
+        { scope: '/Ser/' }
+      )
+    }
+  </script>
+
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Metrowest Service</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Metrowest Service</span>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html"><i><img title="casa1" class="img1" src="public/assets/img/casa1.webp"></i>Home</a>
+          </li>
+          <li><a href="precursorado.html"><i><img title="precursorado" class="img1"
+                  src="public/assets/img/precursor2.webp"></i>Precursorado</a></li>
+          <li><a href="interes.html"><i><img title="interes" class="img1"
+                  src="public/assets/img/precursor1.webp"></i>Interesados</a></li>
+          <li><a href="territorios.html"><i><img title="territorios" class="img1"
+                  src="public/assets/img/territorio1.webp"></i>Territorios</a></li>
+          <li><a href="desastre.html"><i><img title="desastre" class="img1"
+                  src="public/assets/img/tormenta1.webp"></i>Emergencia</a></li>
+          <li><a href="recursos.html"><i><img title="recursos" class="img1 js-arrow"
+                  src="public/assets/img/recurso.webp"></i>Recursos<i class="fa fa-angle-down"></i></a>
+
+            <ul class="js-sub-menu sub-menu">
+              <li>
+                <a href="recursos.html">
+                  <i><img title="explorer" class="img1" src="public/assets/img/explorer.webp"></i>
+                  Instalación en Windows
+                </a>
+              </li>
+              <li>
+                <a href="recursos.html#android">
+                  <i><img title="android" class="img1" src="public/assets/img/android.webp"></i>
+                  Instalacion en Androide
+                </a>
+              </li>
+              <li>
+                <a href="recursos.html#iphone">
+                  <i><img title="apple" class="img1" src="public/assets/img/apple.webp"></i>
+                  Instalacion en iPhone
+                </a>
+              </li>
+              <li>
+                <a href="recursos.html#territorios">
+                  <i><img title="territorio2" class="img1" src="public/assets/img/territorio2.webp"></i>
+                  Acsede a los territorios
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--<li><a href="#">CONTACT US</a></li>-->
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--body original-->
+  <section class="container">
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>RECURSOS Y AYUDA<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <img title="familia2" src="public/assets/img/familia2.webp" class="imgLogo" />
+
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Instalación para
+      Windows<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <div class="content1">
+      <p>
+        Este Web App le permite instalarlo en una computadora, con sistema operativo Windows,
+        como una aplicación. Para instalar la aplicación deberá abrir el enlace en un navegador
+        como Microsoft Edge o internet Explorer <i><img class="img5" title="explorer"
+            src="public/assets/img/explorer.webp"></i>
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+        Luego desde la pagina donde está la aplicación diríjase a los 3 puntos en la parte superior
+        derecha
+      </p>
+      <i><img class="imgLogo2" title="recurso1" src="public/assets/img/recurso1.webp"></i>
+      <p>
+        A continuación diríjase a la opcion “App” y presione “instal this site as an app"
+      </p>
+      <i><img title="recurso2" class="imgLogo2" src="public/assets/img/recurso2.webp"></i>
+      <p>
+        Presione intall
+      </p>
+      <i><img title="recurso3" class="imgLogo2" src="public/assets/img/recurso3.webp"></i>
+      <p>
+        Seleccione su preferencia (se recomienda las que están marcadas en la foto para tener acceso
+        directo en su escritorio y en la barra de tareas al pie de la página
+      </p>
+      <i><img title="recurso4" class="imgLogo2" src="public/assets/img/recurso4.webp"></i>
+      <p>
+        Resultado si selecciona crear acceso en la barra de tareas (Pin to taskbar)
+      </p>
+      <i><img title="recurso5" class="imgLogo2" src="public/assets/img/recurso5.webp"></i><br />
+      <P1 id="android"></P1>
+      <h2 class="section-header" id="section-header">
+        <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Instalación para
+        Android<i>
+          <img title="header2" class="img4" src="public/assets/img/header2.webp">
+        </i>
+      </h2>
+
+      <p>
+        Este Web App le permite instalarlo en su dispositivo Android como un App en su Home Screen (escritorio o
+        pantalla principal).
+        Para instalar la aplicación vea el video.
+      </p>
+    </div>
+    <div class="imgLogo3">
+      <div class="video">
+        <video width="300" controls>
+          <source src="public/assets/video/video2.mp4" type="video/mp4" />
+          <source src="public/assets/video/video.ogg" type="video/ogg" />
+          Tu navegador no soporta videos en HTML5.
+        </video><br><br>
+
+        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/coY906cABsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+      </div>
+      <P1 id="iphone"></P1>
+    </div><br><br>
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Instalación para iPhone<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <div class="content1">
+      <p>
+        Este Web App le permite instalarlo en su iPhone como un App en su Home Screen (escritorio o pantalla
+        principal).
+        Para instalar la aplicación vea el video.
+      </p>
+    </div>
+    <div class="imgLogo3">
+      <div class="video">
+        <video width="300" controls>
+          <source src="public/assets/video/video.mp4" type="video/mp4" />
+          <source src="public/assets/video/video.ogg" type="video/ogg" />
+          Tu navegador no soporta videos en HTML5.
+        </video>
+
+        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/coY906cABsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+      </div>
+      <P1 id="territorios"></P1>
+    </div><br><br>
+
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Acceda a los
+      territorios
+      <img title="header2" class="img4" src="public/assets/img/header2.webp">
+
+    </h2>
+
+    <div class="content1">
+      <p>
+        <br>Para acceder a los territorios a través de su correo electrónico Gmail primero presione el botón
+        correspondiente al grupo que usted fue asignado y luego prosiga con los siguientes pasos:
+      </p>
+      <h3>
+        Confirme su cuenta
+      </h3>
+      <i><img title="gmail1" class="imgLogo2" src="public/assets/img/gmail1.webp"></i>
+      <h3>
+        <br>Entre la contraseña de su Gmail<br>
+      </h3>
+      <i><img title="gmail2" class="imgLogo2" src="public/assets/img/gmail2.webp"></i>
+      <h3>
+        <br>Seleccione el territorio que trabajara<br>
+      </h3>
+      <i><img title="gmail3" class="imgLogo2" src="public/assets/img/gmail3.webp"></i>
+    </div>
+    <div class="containerc">
+      <a href="index.html#condiciones"><i><img title="condiciones" class="img8"
+            src="public/assets/img/condiciones.webp"></i></a>
+      <h3> Antes de utilizar este sitio favor leer las
+        <a href="index.html#condiciones" target="_blank"> Condiciones de Uso </a>,
+        para acceder este sitio.
+      </h3>
+    </div>
+    <div class="content1">
+      <h3>Cuerpo de Ancianos. Unidos por amor a Jehová, trabajando por la congregaciónn.</h3><br><i><img
+          title="logolarge" class="imgLogo2" src="public/assets/icons/logo.webp" /></i>
+    </div>
+    <div class="formulario__parrafo">
+      <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+    </div>
+  </section>
+
+  <!-- Memanggil scripts-->
+  <script type="text/javascript"></script>
+
+  <!--contactos js-->
+  <script src="public/script.js"></script>
+  <script src="public/main.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register(
+        '/sw.js'
+      );
+    }
+  </script>
+</body>
+
+</html>

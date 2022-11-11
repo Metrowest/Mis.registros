@@ -13,12 +13,14 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
 
   <!-- Facebook metadata -->
-  <meta property="og:image:width" content="279">
-  <meta property="og:image:height" content="279">
-  <meta property="og:description" content="Esta aplicaci&oacute;n le proveer&aacute;; el plan de emergencias y algunas herramientas para el servicio.">
+  <meta property="og:image:width" content="192">
+  <meta property="og:image:height" content="192">
+  <meta property="og:description"
+    content="Esta aplicaci&oacute;n le proveer&aacute; el plan de emergencias y algunas herramientas para el servicio.">
   <meta property="og:title" content="Metrowest Service">
-  <meta property="og:image" content="https://github.com/Metrowest/Service/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
-  <meta property="og:url" content="https://metrowest.github.io/Service/">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons2/android-chrome-192x192.png?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/desastre.html">
 
   <!-- Boxicons CDN Link Nav var pequwno-->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -29,13 +31,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
-  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ee6306">
+  <link rel="apple-touch-icon" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_16.ico" sizes="16x16" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_48.ico" sizes="48x48" />
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
   <link rel="manifest" href="public/manifest.json" />
@@ -65,7 +66,7 @@
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
-
+  <app-index></app-index>
 
   <nav>
     <div class="navbar">
@@ -132,96 +133,36 @@
   <!--body original-->
   <section class="container">
     <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>METROWEST SERVICE<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
-    <h3>Unidos por amor a Jehová, trabajando por la congregación.
-    </h3>
-    <div class="containera">
-      <img title="logolarge" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
-
-      <h4>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
-        sostenerle las manos.
-      </h4>
-    </div>
-
-    <div class="content1">
-      <p>
-        Metrowest Service no sustituye el sitio oficial de la Organización
-        Cristiana de los Testigos de Jehová, jw.org ni la aplicación JW Library.
-        Tampoco sustituye la aplicación NW JWS, que se utiliza para enviar los informes y publicar los anuncios, eventos,
-        programas de las reuniones de la congregación.
-      </p>
-      <p>
-        Este sitio se ha preparado con la intención de facilitar a los hermanos de la congregación Metrowest Spanish
-        las siguientes herramientas:<br><br>
-
-        1. Aplicar para el precursorado auxiliar en línea por medio de WhatsApp. Al llenar la aplicación debe
-        concluir enviando el mensaje por WhatsApp, de lo contrario no habrá completado su aplicación.<br><br>
-        2. Acceso a los territorios para la predicación. El acceso a los territorios es atravez de su correo
-        electronico, preferivlemente su gmail. <br><br>
-        3. Informar personas que muestran interés.<br><br>
-        4. Plan de emergencia ante un desastre natural, incluye: <br>
-        • Responsabilidades<br>
-        • Plan<br>
-        • Vigilancia ante huracán<br>
-        • Aviso de huracán<br>
-        • Después del huracán<br>
-        • Pasos por seguir <br>
-        • Textos para el pastoreo<br>
-        <P1 id="condiciones"></P1>
-        • Preparación<br><br>
-
-      </p>
-    </div>
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>CONDICIONES DE USO<i>
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>LIMITES DEL TERRITORIO<i>
         <img title="header2" class="img4" src="public/assets/img/header2.webp">
       </i>
     </h2>
 
-    <img title="condiciones" src="public/assets/img/condiciones.webp" class="imgLogo" />
+    <img title="mapalarge" src="public/assets/img/territorio3.webp" class="imagemapalarge" />
 
-    <div class="content1">
-      <h3>El uso de este Web App está regido por las presentes condiciones.</h3>
-      <p>
-        Al usar este sitio, usted se compromete a cumplir todas estas condiciones establecidas en este
-        formato digital.<br>
-        <br> No debe utilizar este sitio si no está dispuesto a cumplir estas condiciones en su totalidad o
-        en parte.<br>
-        <br> El enlace e información contenida es para uso único y exclusivo de los miembros de la
-        congregación Metrowest.<br>
-        <br>La información contenida no se debe postear en las redes sociales ni adelantar a menos que
-        tengan permiso del Cuerpo de Ancianos.
-      </p>
 
-      <h3>Lo siguiente está prohibido: </h3>
-      <p>
-        Publicar material gráfico, publicaciones electrónicas, artículos de este medio digital de anuncios en
-        cualquier sitio web, sitio de intercambio de archivos, sitio de intercambio de vídeo o red social.
-        <br>
-      </p>
-    </div>
-
-    <div class="containera">
-      <h3>Cuerpo de ancianos, trabajando unidos por amor a Jehová para la congregación.</h3>
-      <img title="logo" src="public/assets/icons/logo.webp" class="imgLogo2" />
-    </div>
     <div class="formulario__parrafo">
       <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
     </div>
   </section>
+  <!-- Memanggil scripts-->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script type="text/javascript"></script>
 
   <!--contactos js-->
   <script src="public/script.js"></script>
   <script src="public/main.js"></script>
 
-  <!-- Memanggil scripts-->
-  <script type="text/javascript"></script>
-
-
-
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register(
+        '/sw.js'
+      );
+    }
+  </script>
 </body>
 
 </html>
