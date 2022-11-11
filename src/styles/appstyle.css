@@ -13,7 +13,7 @@
 
 body {
     min-height: 100vh;
-    background-color: #2b2727;
+    background-color: #5a92b96e;
     padding-top: 80px;
     font-family: Lato;
 }
@@ -25,7 +25,7 @@ nav {
     width: 100%;
     height: 100%;
     height: 100px;
-    background: #ee6306;
+    background: #3e8da8;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
     z-index: 99
 }
@@ -573,6 +573,56 @@ h4 {
 
 
 /*--contactos--*/
+
+
+.container .form .inputfield {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center
+}
+
+.container .form .inputfield label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 20px
+}
+
+.container .form .inputfield .input,
+.container .form .inputfield .textarea {
+    outline: 0;
+    order: 3px solid #00eaf2;
+    font-size: 20px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all .3s ease;
+    width: 95%
+}
+
+input {
+    margin: 5px
+}
+
+.btn.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #08233b;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px;
+    margin: auto;
+    justify-content: flex-end;
+}
+
+.btn.btn-primary:hover {
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+
 #buscar,
 #button1 {
     color: #fff;
@@ -606,7 +656,6 @@ select#srchID {
     justify-content: space-around;
 }
 
-
 .button1 {
     color: #fff;
     background-color: maroon;
@@ -618,7 +667,6 @@ select#srchID {
     margin: 10px;
     display: flex;
     align-items: center;
-
 }
 
 select#srchID {
@@ -714,26 +762,25 @@ form.projects {
     justify-content: center;
     flex-direction: row-reverse;
     font-weight: 600;
+    align-items: center;
 }
 
+select,
 input[type="SUBMIT"] {
-    background-color: black;
+    background-color: #3e8da8;
     color: white;
     padding: 10px;
     font-size: 18px;
     border-radius: 10px;
     margin-right: 5px;
-}
-
-select {
-    border-radius: 10px;
-    background-color: black;
-    color: white;
+    height: 60px;
 }
 
 option {
-    background-color: black;
+    background-color: #3e8da8;
     color: white;
+    font-size: 18px;
+
 }
 
 #no-more-tables {
@@ -1073,7 +1120,7 @@ option {
     }
 
 
-/*--precursorado--*/
+/*--interes--*/
 #Direccion {
     font-size: 24px;
     background-color: #95fefe;
