@@ -522,7 +522,7 @@ img {
     text-align: center;
     font-size: 24px;
     color: #fff;
-    background: linear-gradient(-135deg, #0000009c, #ee6306);
+    background: linear-gradient(-135deg,#c3d6f8,#005691);
     box-shadow: 0 0 3px 1px;
     border-radius: 20px;
     margin-right: auto;
@@ -545,7 +545,7 @@ img {
     background-color: #410101;
     box-shadow: 0 2px 0 #720101;
     box-shadow: 0 6px 0 #0e1a18;
-    background: linear-gradient(-135deg, #ee6306, #0000009c)
+    background: linear-gradient(-135deg, #005691, #c3d6f8)
 }
 
 p {
