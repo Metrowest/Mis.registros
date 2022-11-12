@@ -54,10 +54,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
-
-
   <link rel="stylesheet" href="src/styles/appstyle.css">
-  <link rel="stylesheet" href="src/styles/registros.css">
   <script type="module" href="/src/app-index.ts"></script>
 
 </head>
@@ -140,24 +137,28 @@
           <!--<span class="typed"></span>-->
         </h2>
         <div class="title">
-          <a href="#mrphekeModal1" class="btn btn-primary" style="font-size:12pt; font-weight: bold;color:white;"
+          <a href="#mrphekeModal1" class="btn btn-primary"
             data-toggle="modal"><i class="material-icons"></i>REVISAR REGISTROS<img class="img2"
               src="public/assets/img/lupa.webp"><i><span class="button__text"></span></i></a>
         </div>
+
         <div class="inputfield">
           <button type="button" id="buscar" class="button1" onclick="read_value($('#srchID').val())">
             <img title="lupa" class="img2" src="public/assets/img/lupa.webp">
             <i><span class="button__text">Buscar</span></i>
           </button>
-          <input type="number" name="srchID" id="srchID" placeholder="Buscar por ID"
-            style="padding: 3px;height: 40px;font-size: 20px;width: 100px;background-color:  #F5F5DC;color: #000;font-weight: bold;">
+
+          <input type="number" name="srchID" id="srchID" placeholder="Buscar por ID">
         </div>
+
         <div class="inputfield">
           <label>ID</label>
           <input type="number" id="id" name="id" class="input" placeholder="Número de ID" required value="">
           <label>Nombre</label>
           <input type="text" id="nombre" name="nombre" class="input" placeholder="Nombre y apellido" required>
         </div>
+
+
         <div class="inputfield">
           <label>Sexo</label>
           <select type="text" id="gender" name="gender" class="input" required>
@@ -297,7 +298,7 @@
 
       <div class="louder-area">
         <div></div>
-        <div id="loader" style="margin-top: -18px;"></div>
+        <div id="loader"></div>
         <p id="re"></p>
       </div>
       <div class="buttons-area">
