@@ -573,8 +573,6 @@ h4 {
 
 
 /*--contactos--*/
-
-
 .container .form .inputfield {
     margin-bottom: 15px;
     display: flex;
@@ -616,11 +614,23 @@ input {
     margin: 5px;
     margin: auto;
     justify-content: flex-end;
+    font-size:14pt;
+    font-weight: bold;
 }
 
 .btn.btn-primary:hover {
     background: rgb(0, 0, 0);
     color: #fff;
+}
+
+#srchID {
+padding: 3px;
+height: 40px;
+font-size: 20px;
+width: 100px;
+background-color:  #F5F5DC;
+color: #000;
+font-weight: bold;
 }
 
 #buscar,
