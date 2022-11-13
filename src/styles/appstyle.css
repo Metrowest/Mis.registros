@@ -35,11 +35,10 @@ nav .navbar {
     max-width: 1000px;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
     padding: 0 50px;
-    margin-top: 10px;
+    align-items: center;
 }
 
 .navbar .logo a {
@@ -48,7 +47,7 @@ nav .navbar {
     text-decoration: none;
     font-weight: 600;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 nav .navbar .nav-links {
@@ -415,7 +414,8 @@ img {
     height: 60px;
     margin-right: 25px;
     display: flex;
-    margin-left: 25px,
+    margin-left: 25px;
+    margin-top: 15px;
 }
 
 .img2 {
