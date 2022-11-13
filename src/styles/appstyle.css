@@ -403,9 +403,10 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 img {
-    max-width: 100%; /* or max-width: 100%; */
+    max-width: 100%;
+    /* or max-width: 100%; */
     height: auto;
-  }
+}
 
 .img1 {
     height: 60px;
@@ -472,11 +473,15 @@ img {
     border-radius: 50px
 }
 
-.imagemapalarge, .imgLogo, .imgLogo2, .img8, .img9 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  min-width: 100px;
+.imagemapalarge,
+.imgLogo,
+.imgLogo2,
+.img8,
+.img9 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-width: 100px;
 }
 
 .imgLogo,
@@ -522,7 +527,7 @@ img {
     text-align: center;
     font-size: 24px;
     color: #fff;
-    background: linear-gradient(-135deg,#c3d6f8,#005691);
+    background: linear-gradient(-135deg, #c3d6f8, #005691);
     box-shadow: 0 0 3px 1px;
     border-radius: 20px;
     margin-right: auto;
@@ -572,7 +577,7 @@ h4 {
 }
 
 
-/*--contactos--*/
+/*--registros--*/
 .container .form .inputfield {
     margin-bottom: 15px;
     display: flex;
@@ -614,7 +619,7 @@ input {
     margin: 5px;
     margin: auto;
     justify-content: flex-end;
-    font-size:14pt;
+    font-size: 14pt;
     font-weight: bold;
 }
 
@@ -624,13 +629,13 @@ input {
 }
 
 #srchID {
-padding: 3px;
-height: 40px;
-font-size: 20px;
-width: 100px;
-background-color:  #F5F5DC;
-color: #000;
-font-weight: bold;
+    padding: 3px;
+    height: 40px;
+    font-size: 20px;
+    width: 100px;
+    background-color: #F5F5DC;
+    color: #000;
+    font-weight: bold;
 }
 
 #buscar,
@@ -980,36 +985,36 @@ option {
     margin-top: 30px
 }
 
-    .content2 .inputs input {
-        font-size: 20px;
-        padding-left: 20%
-    }
+.content2 .inputs input {
+    font-size: 20px;
+    padding-left: 20%
+}
 
-    .content2 .inputs input {
-        width: 100%;
-        height: 40px;
-        border: none;
-        border-bottom: 2px solid #005691;
-        outline: 0;
-        font-size: 20px;
-        transition: .3s;
-        background-color: #95fefe
-    }
+.content2 .inputs input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #005691;
+    outline: 0;
+    font-size: 20px;
+    transition: .3s;
+    background-color: #95fefe
+}
 
-        .content2 .inputs input:focus {
-            border-color: #14dcd2
-        }
+.content2 .inputs input:focus {
+    border-color: #14dcd2
+}
 
-    .content2 .inputs label {
-        position: absolute;
-        bottom: 10px;
-        left: 0;
-        pointer-events: none;
-        font-size: 24px;
-        transition: .3s;
-        color: #ff0404;
-        padding-left: 5pt
-    }
+.content2 .inputs label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    font-size: 24px;
+    transition: .3s;
+    color: #ff0404;
+    padding-left: 5pt
+}
 
 .content2 .mb-3 label {
     pointer-events: none;
@@ -1020,10 +1025,11 @@ option {
     margin-left: 10px;
 }
 
-    .content2 .inputs input:focus ~ label, .content2 .inputs input:valid ~ label {
-        transform: translateY(-28px);
-        color: #0a9c1e
-    }
+.content2 .inputs input:focus~label,
+.content2 .inputs input:valid~label {
+    transform: translateY(-28px);
+    color: #0a9c1e
+}
 
 .form-check-input {
     font-size: 24px;
@@ -1031,7 +1037,7 @@ option {
     background-color: #3e8da8;
     border-radius: 5px;
     margin-top: 20px;
-  }
+}
 
 .form-check-label {
     font-size: 25px
@@ -1117,17 +1123,17 @@ option {
     padding: 5px;
 }
 
-    #respuesta.fail {
-        color: red;
-        font-size: 25px;
-        text-align: center;
-    }
+#respuesta.fail {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+}
 
-    #respuesta.send {
-        color: green;
-        font-size: 25px;
-        text-align: center;
-    }
+#respuesta.send {
+    color: green;
+    font-size: 25px;
+    text-align: center;
+}
 
 
 /*--interes--*/
@@ -1140,9 +1146,9 @@ option {
     display: flex;
     width: -moz-available;
     width: -webkit-fill-available;
-  }
+}
 
-  #Observaciones {
+#Observaciones {
     font-size: 24px;
     background-color: #95fefe;
     border-radius: 5px;
@@ -1151,7 +1157,4 @@ option {
     display: flex;
     width: -moz-available;
     width: -webkit-fill-available;
-  }
-
-
-
+}
