@@ -1,18 +1,18 @@
 {
-  "id": "Metrowest2",
-  "scope": "/Service/",
-  "name": "Metrowest Service",
+  "id": "Mi.registro.Yadira",
+  "scope": "/Mis.registros/",
+  "name": "Mis registros, Yadira",
   "display_override": [
     "window-controls-overlay",
     "minimal-ui"
   ],
   "display": "standalone",
-  "start_url": "/Service/",
-  "short_name": "Service",
-  "theme_color": "#04416c",
-  "description": "Esta aplicación le proveerá algunas herramientas para cuidar de la congregación",
+  "start_url": "/Mis.registros/",
+  "short_name": "Mis registros",
+  "description": "Mis registros, Yadira",
   "orientation": "any",
-  "background_color": "#5a92b9",
+  "background_color": "#5a92b96e",
+  "theme_color": "#04416c",
   "related_applications": [],
   "dir": "ltr",
   "lang": "en",
@@ -99,12 +99,12 @@
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {
-      "title": "Metrowest Service",
+      "title": "Mis registros, Yadira",
       "text": "Esta aplicación le proveerá algunas herramientas para cuidar de la congregación",
-      "url": "https://metrowest.github.io/Service/",
+      "url": "https://metrowest.github.io/Mis.registros/",
       "files": [
         {
-          "name": "Metrowest Service",
+          "name": "Mis registros, Yadira",
           "accept": [
             ".html",
             ".mhtml",
