@@ -7,19 +7,20 @@
 
   <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
-  <meta name="description" content="This is a Guide app" />
+  <meta name="description" content="This is a Service app" />
 
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5790b8" />
 
   <!-- Facebook metadata -->
   <meta property="og:image:width" content="279">
   <meta property="og:image:height" content="279">
-  <meta property="og:title" content="An awesome page">
-  <meta property="og:description" content="Unidos por amor a Jehov&aacute;;, trabajando por la congregaci&oacute;n.">
-  <meta property="og:image"
-    content="https://github.com/Metrowest/GPS/blob/main/public/assets/icons/android-chrome-maskable-512x512.png?raw=true/og-image.jpg">
-  <meta property="og:url" content="https://metrowest.github.io/GPS/">
+  <meta property="og:description" content="Esta aplicaci&oacute;n le proveer&aacute;; el plan de emergencias y algunas herramientas para el servicio.">
+  <meta property="og:title" content="Mis registros, Yadira">
+  <meta property="og:image" content="https://github.com/Metrowest/Mis.registros/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Mis.registros/">
+
+
 
   <!-- Boxicons CDN Link Nav var pequwno-->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -30,12 +31,13 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" href="public/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
-  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
-  <link rel="icon" type="image/png" href="public/assets/icons/icon_16.ico" sizes="16x16" />
-  <link rel="icon" type="image/png" href="public/assets/icons/icon_32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="public/assets/icons/icon_48.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ee6306">
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
   <link rel="manifest" href="public/manifest.json" />
@@ -60,6 +62,8 @@
 </head>
 
 <body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+
   <nav>
     <div class="navbar">
       <i class='bx bx-menu'></i>
@@ -76,7 +80,7 @@
                   src="public/assets/img/precursor2.webp"></i>Precursorado</a></li>
           <li><a href="interes.html"><i><img title="interes" class="img1"
                   src="public/assets/img/precursor1.webp"></i>Interesados</a></li>
-          <li><a href="registros.html"><i><img title="registros" class="img6"
+          <li><a href="registros.html"><i><img title="registros" class="img1"
                   src="public/assets/img/registros.webp"></i>Registros</a></li>
           <li><a href="territorios.html"><i><img title="territorios" class="img1"
                   src="public/assets/img/territorio1.webp"></i>Territorios</a></li>
@@ -123,6 +127,7 @@
       </div>
     </div>
   </nav>
+
   <!-- body contents -->
   <section class="container">
     <h2 class="section-header" id="section-header">
@@ -302,7 +307,7 @@
       <div class="buttons-area">
         <button class="button1" id="g1" onClick="insert_value()"
           value="Registrar">
-          <img class="img2" title="registros" src="public/assets/img/registros.png"><i><span class="button__text">Registrar</span></i>
+          <img class="img2" title="registros" src="public/assets/img/registros.webp"><i><span class="button__text">Registrar</span></i>
         </button>
         <button class="button1" id="g2"
           onclick="read_value($('#srchID').val())">
