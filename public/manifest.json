@@ -11,7 +11,7 @@
   "short_name": "Mis registros",
   "description": "Mis registros, Yadira",
   "orientation": "any",
-  "background_color": "#5a92b96e",
+  "background_color": "#5790b8",
   "theme_color": "#04416c",
   "related_applications": [],
   "dir": "ltr",
@@ -35,11 +35,6 @@
       "sizes": "512x512",
       "type": "maskable",
       "purpose": "any"
-    },
-    {
-      "src": "assets/icons/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
     },
     {
       "src": "assets/icons/android-chrome-512x512.png",
