@@ -352,10 +352,11 @@
   <script src="public/registros.js"></script>
 
   <script>
-    if ('serviceWorker' in navigator) {
+    if (navigator.serviceWorker) {
       navigator.serviceWorker.register(
-        '/sw.js'
-      );
+        '/Mis.registros/sw.js',
+        { scope: '/Mis.registros/' }
+      )
     }
   </script>
 </body>
